@@ -22,9 +22,9 @@ const HeadComponents = [
   <link key="styles-light" rel="stylesheet" href="/css/light.css" />,
   <link key="styles-dark" rel="stylesheet" href="/css/dark.css" />,
   // Icon
-  <link key="icon" rel="shortcut icon" href="/favicon.ico?v=2" title="Favicon" sizes="16x16" />,
-  <link key="icon-32" rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="32x32" />,
-  <link key="icon-16" rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="16x16" />,
+  <link key="icon" rel="shortcut icon" href="/favicon.ico?v=3" title="Favicon" sizes="16x16" />,
+  <link key="icon-32" rel="icon" type="image/x-icon" href="/favicon.ico?v=3" sizes="32x32" />,
+  <link key="icon-16" rel="icon" type="image/x-icon" href="/favicon.ico?v=3" sizes="16x16" />,
   // Scripts
   <script key="isotope" src="/js/isotope.pkgd.min.js"></script>,
   <script key="pace" src="/js/pace.min.js"></script>,
