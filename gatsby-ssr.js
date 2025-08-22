@@ -7,7 +7,7 @@ const HtmlAttributes = {
 const HeadComponents = [
   // Meta Tags
   <meta key="httpEquiv" httpEquiv="X-UA-Compatible" content="IE=edge" />,
-  <meta key="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />,
+  <meta key="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />,
   <meta key="keywords" name="keywords" content="RubrixCode, Coming Soon, Web Development" />,
   <meta key="description" name="description" content="RubrixCode - Coming Soon" />,
   <meta key="author" name="author" content="RubrixCode" />,

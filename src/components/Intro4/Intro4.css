@@ -27,6 +27,8 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .footer-contact {
@@ -35,7 +37,8 @@
   align-items: flex-start;
   gap: 8px; 
   color: white;
-  margin-left: 40px; 
+  margin-left: 0;
+  margin-bottom: 20px;
 }
 
 
@@ -44,12 +47,14 @@
   align-items: center;
   gap: 12px; 
   margin-bottom: 15px;
+  font-size: 14px;
+  flex-wrap: wrap;
 }
 
 
 .logo-box {
-  height: 96px;
-  width: 96px;
+  height: 60px;
+  width: 60px;
   margin: 0 auto 16px;
 
   border-radius: 9999px;
@@ -61,18 +66,18 @@
 .logo-text {
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 .logo-image {
-  margin-top: 50px;
-  height: 250%;
-  width: 250%;
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
   background-color: transparent;
 }
 
 .coming-soon-text {
-  font-size: 100px;
+  font-size: 36px;
   font-weight: bold;
   background: linear-gradient(to right, #06b6d4, #3b82f6);
   -webkit-background-clip: text;
@@ -80,25 +85,31 @@
   background-clip: text;
   color: transparent;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  line-height: 1.2;
+  word-wrap: break-word;
+  padding: 0 10px;
 }
 
 .footer {
   position: relative;
   z-index: 10;
   width: 100%;
-  padding: 32px;
+  padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: 14px;
+  font-size: 12px;
   color: #94a3b8; 
+  gap: 20px;
 }
 
 .footer a {
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
+  word-break: break-word;
 }
 
 .footer a:hover {
@@ -109,13 +120,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   border: 2px solid #06b6d4; 
   border-radius: 9999px;
   background-color: transparent;
   color: white; 
-  margin-left: 8px;
+  margin-left: 0;
+  margin-right: 8px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -145,7 +157,7 @@
 
 .social-icon {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   transition: all 0.3s ease;
 }
 
@@ -158,16 +170,17 @@
 .footer-social {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  margin-right: 30px; 
-  
+  align-items: flex-start;
+  margin-right: 0;
+  width: 100%;
 }
 
 .footer-icons {
   display: flex;
   flex-direction: row;
-  margin-right: 5px; 
-  gap: 12px;
+  margin-right: 0;
+  gap: 8px;
+  margin-bottom: 15px;
 }
 
 @keyframes socialPulse {
@@ -188,11 +201,13 @@
 
 .icon {
   color: #06b6d4;
+  flex-shrink: 0;
 }
 
 .copyright-text {
-  margin-top: 12px; 
-    margin-right: 20px; 
+  margin-top: 0;
+  margin-right: 0;
+  font-size: 12px;
 }
 
 .intro-header {
@@ -203,6 +218,7 @@
   z-index: 10;
   width: 100%;
   position: relative;
+  padding: 20px 0;
 }
 
 .intro-center {
@@ -210,6 +226,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 600px;
 }
 
 
@@ -219,6 +237,225 @@
   border-radius: 4px;
   object-fit: contain;
   background-color: transparent;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .intro-container {
+    padding: 30px;
+  }
+  
+  .logo-box {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .coming-soon-text {
+    font-size: 60px;
+    margin-top: 40px;
+  }
+  
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px;
+    font-size: 14px;
+  }
+  
+  .footer-contact {
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+  
+  .footer-social {
+    align-items: flex-end;
+    margin-right: 30px;
+    width: auto;
+  }
+  
+  .footer-icons {
+    margin-bottom: 12px;
+    gap: 12px;
+  }
+  
+  .social-button {
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    margin-right: 0;
+  }
+  
+  .social-icon {
+    font-size: 18px;
+  }
+  
+  .copyright-text {
+    margin-top: 12px;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-contact-item {
+    font-size: 14px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .intro-container {
+    padding: 40px;
+  }
+  
+  .logo-box {
+    height: 96px;
+    width: 96px;
+  }
+  
+  .coming-soon-text {
+    font-size: 80px;
+    margin-top: 50px;
+  }
+  
+  .footer {
+    padding: 40px;
+  }
+  
+  .footer-contact {
+    margin-left: 60px;
+  }
+  
+  .footer-social {
+    margin-right: 40px;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1440px) {
+  .coming-soon-text {
+    font-size: 100px;
+  }
+  
+  .footer {
+    padding: 50px;
+  }
+  
+  .footer-contact {
+    margin-left: 80px;
+  }
+  
+  .footer-social {
+    margin-right: 50px;
+  }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 375px) {
+  .intro-container {
+    padding: 15px;
+  }
+  
+  .logo-box {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .coming-soon-text {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  .footer {
+    padding: 15px;
+  }
+  
+  .footer-contact-item {
+    font-size: 12px;
+    gap: 8px;
+  }
+  
+  .social-button {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .social-icon {
+    font-size: 14px;
+  }
+  
+  .copyright-text {
+    font-size: 11px;
+  }
+}
+
+/* Landscape Mobile Styles */
+@media (max-height: 500px) and (orientation: landscape) {
+  .intro-container {
+    min-height: 100vh;
+    padding: 10px;
+  }
+  
+  .logo-box {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .coming-soon-text {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  
+  .footer {
+    padding: 15px;
+    flex-direction: row;
+  }
+  
+  .footer-contact {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  
+  .footer-social {
+    align-items: flex-end;
+    margin-right: 20px;
+  }
+  
+  .footer-contact-item {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  
+  .social-button {
+    height: 28px;
+    width: 28px;
+  }
+  
+  .social-icon {
+    font-size: 12px;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .social-button {
+    animation: none;
+  }
+  
+  .social-button:hover {
+    transform: none;
+  }
+  
+  .social-button::before {
+    display: none;
+  }
 }
 
 
