@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Vie',
-    description: 'Vie - Multi-Purpose React.js Gatsby Template',
-    author: 'ThemesCamp'
+    title: 'RubrixCode',
+    description: 'RubrixCode - Coming Soon',
+    author: 'RubrixCode'
   },
   plugins: [
     'gatsby-plugin-resolve-src',
