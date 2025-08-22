@@ -11,6 +11,9 @@ const HeadComponents = [
   <meta key="keywords" name="keywords" content="RubrixCode, Coming Soon, Web Development" />,
   <meta key="description" name="description" content="RubrixCode - Coming Soon" />,
   <meta key="author" name="author" content="RubrixCode" />,
+  <meta key="cache-control" httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />,
+  <meta key="pragma" httpEquiv="Pragma" content="no-cache" />,
+  <meta key="expires" httpEquiv="Expires" content="0" />,
   // Google Fonts
   <link key="Poppins" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" />,
   <link key="Montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" />,
@@ -19,7 +22,9 @@ const HeadComponents = [
   <link key="styles-light" rel="stylesheet" href="/css/light.css" />,
   <link key="styles-dark" rel="stylesheet" href="/css/dark.css" />,
   // Icon
-  <link key="icon" rel="shortcut icon" href="/favicon.ico" title="Favicon" sizes="16x16" />,
+  <link key="icon" rel="shortcut icon" href="/favicon.ico?v=2" title="Favicon" sizes="16x16" />,
+  <link key="icon-32" rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="32x32" />,
+  <link key="icon-16" rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="16x16" />,
   // Scripts
   <script key="isotope" src="/js/isotope.pkgd.min.js"></script>,
   <script key="pace" src="/js/pace.min.js"></script>,
